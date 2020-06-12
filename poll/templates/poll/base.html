@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            background-color: gray;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 0px 5px;
+
+        }
+
+
+        .container {
+
+            width: 600px;
+            /* height: 500px; */
+            display: flex;
+            border: 2px solid beige;
+            background-color: gray;
+            border-radius: 10px;
+            margin: 200px auto;
+            flex-direction: column;
+            flex-grow: 1;
+
+        }
+
+        body {
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto 10px;
+            justify-content: center;
+            justify-items: center; */
+            background-color: rgb(241, 238, 238);
+            /* background: url('5.jpg') no-repeat center center/cover; */
+        }
+
+        input[type=submit]:hover {
+            color: blueviolet;
+            background-color: cornsilk;
+        }
+
+        input[type=reset]:hover {
+            color: magenta;
+            background-color: mediumaquamarine;
+
+        }
+
+        input[type=url] {
+            display: inline;
+            margin: 0px 5px;
+            width: 40%;
+        }
+
+        input[type=time] {
+            width: 5%;
+        }
+
+        /* input[type=text] {
+            display: inline-flex;
+            background-color: #b49de2;
+            margin: 2px 10px;
+        }*/
+
+        b {
+            text-align: center;
+            display: inline
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header class="top">
+      
+    </header> -->
+
+    <div class="container">
+        <h2>Welcome to Form page</h2>
+        <div class="box">
+            <form action="" autocomplete="on">
+                <input type="url" class="boxclass" placeholder="Enter Your URL" required="required">
+                <input type="number" class="boxclass" placeholder="time(mins) to poll" required="required">
+                <input type="submit" class="boxclass" value="submit">
+                <input type="reset" class="boxclass">
+                <!-- <b> Result: </b>
+                <input type="text" name="result" size="60"> -->
+            </form>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

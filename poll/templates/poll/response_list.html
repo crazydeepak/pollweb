@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response List</title>
+</head>
+
+<body>
+    {% for i in object_set%}
+    <h3>{{i.url_id}}</h3>
+
+    <p>Checked_TS: {{i.checked_ts}}</p>
+    <p>Response Time: {{i.secs_for_first_response}}</p>
+    <p>Response Code:{{i.response_code}}</p>
+    <hr>
+    {% endfor %}
+</body>
+
+</html>
